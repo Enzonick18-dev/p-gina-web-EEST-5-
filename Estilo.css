@@ -99,8 +99,7 @@
 }
 
 .Ventana_parrafo {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 5px;
     color: gainsboro;
 }
 
@@ -108,7 +107,7 @@
     width: 80%;
     height: 85%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 45px;
     position: relative;
     z-index: 10;
     overflow: auto;
@@ -118,9 +117,13 @@
     background: orange;
     padding-left: 5px;
     padding-right: 5px;
+    position: fixed;
+    z-index: 11;
+    width: 80%;
 }
 
 .Ventana_Fondo {
+    margin-top: 80px;
     justify-items: center;
     position: relative;
 }
@@ -129,15 +132,21 @@
     background: orange;
     padding-left: 5px;
     padding-right: 5px;
+    position: fixed;
+    bottom: 7%;
+    z-index: 11;
+    width: 80%;
 }
 
 .Ventana_cerrar-boton {
     background-color: #000;
     color: #fff;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 8%;
+    right: 10%;
     padding: 4px 12px;
+    z-index: 12;
+    position: fixed;
 }
 
 .Ventana_palabra-centrada {
@@ -233,8 +242,7 @@ article {
 
 .Posición2 {
     display: flex;
-    padding-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     align-items: center;
 }
 
@@ -397,7 +405,7 @@ background: #333;
     grid-template-rows: auto 1fr auto;
     grid-auto-flow: dense;
     margin: auto;
-    gap: 10px;
+    gap: 50px;
     min-height: 100vh;
     grid-template-areas: 
     "header header header header"
@@ -472,6 +480,7 @@ background: #333;
 
 .Parrafo1 {
     margin-top: 10px;
+    overflow: auto;
 }
 
 .Imagen_slot {
@@ -541,6 +550,11 @@ background: #333;
     margin: 10px;
     color: #13547a;
     border-bottom: #a1c4fd solid 5px;
+}
+
+.Posición3-5 {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .Tarjeta-general {
@@ -621,21 +635,34 @@ background: #333;
     margin-bottom: 20px;
 }
 
+.Posición4 {
+    margin-top: 50px;
+    padding-bottom: 25px;
+}
+
 footer {
     background-color: #333;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     color: #f5f7fa;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .footers {
-    margin-right: 95px;
-    margin-left: 95px;
+    margin: 50px;
 }
 
 .Icon {
     width: 25px;
     height: 25px;
     margin-top: 10px;
+}
+
+.Decoración {
+    border-bottom: #13547a solid 10px;
+    border-bottom-style: double;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
